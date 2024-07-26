@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;    
+}
+.main-container {
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.palette-box {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.color-box {
+    width: 250px;
+    height: 139px;
+    display: flex;
+    flex-grow: calc(1);
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+.color-box > p{
+    align-self: last baseline;
+}
+
+button {
+    padding: 15px 30px;
+    border: 1px solid;
+    border-color: rgba(245, 245, 245, 0.623);
+    border-radius: 4px;
+    background-color: transparent;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    display: none;
+}
+.color-box:hover button {
+    display: block;
+}
+a{
+    cursor: pointer;
+    text-decoration: none;
+    text-align: left;
+}
+.back{
+    padding: 5px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+p{
+    padding: 0px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    font-weight: bold;
+}
+
+
+
+@media screen and (max-width:1024px) {
+    .color-box {
+        justify-content: center;
+    }
+    .color-box > p{
+        display: none;
+    }
+}
